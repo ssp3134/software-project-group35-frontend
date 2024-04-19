@@ -123,7 +123,7 @@ const App = props => {
                     </Guard>
                   </WindowWrapper>
                   <ReactHotToast>
-                    <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
+                    <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast', duration: 1000*10 }} />
                   </ReactHotToast>
                 </ThemeComponent>
               )
