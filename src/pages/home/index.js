@@ -5,31 +5,22 @@ import Typography from '@mui/material/Typography'
 import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 import { useAuth } from 'src/hooks/useAuth'
-import Student from './components/student'
-import Employee from './components/employee'
+import AddStudentDetail from './components/addStudentDetail'
+import AddEmployeeDetail from './components/addEmployeeDetail'
+import EditEmployeeDetail from './components/editEmployeeDetail'
+import EditStudentDetail from './components/editStudentDetail'
+
+
 const Home = () => {
   const { userAuths } = useAuth()
 
   return (
 
     <Grid container spacing={6}>
-      {
-
-        (userAuths.includes('emp')) ?
-          (
-            <Grid item xs={12}>
-              <Employee />
-            </Grid>
-          )
-          :
-          (
-            <Grid item xs={12}>
-              <Student />
-            </Grid>
-          )
-
-      }
-
+      {/* <AddStudentDetail/> */}
+      {/* <EditStudentDetail/> */}
+      <AddEmployeeDetail/>
+      {/* <EditEmployeeDetail/> */}
     </Grid>
   )
 }
