@@ -17,7 +17,10 @@ const Home = () => {
   return (
 
     <Grid container spacing={6}>
-      <EditStudentDetail/>
+      {/* <AddStudentDetail/> */}
+      {/* <EditStudentDetail/> */}
+      <AddEmployeeDetail/>
+      {/* <EditEmployeeDetail/> */}
     </Grid>
   )
 }
